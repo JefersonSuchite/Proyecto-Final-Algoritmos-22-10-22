@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <script src="https://kit.fontawesome.com/0ea474e709.js" crossorigin="anonymous"></script><!--ME PERMITE USAR ICONOS-->
+    <link rel="stylesheet" href="css/Estilos.css" /><!--LLAMO AL ARCHIVO CSS-->
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <p>JEFERSON ALEXIS SUCHITE CHÁVEZ 0909-22-12681</p>
+    <P>KIMBERLY CATANIA VILLEDA ROSALES 0909-22-13640</P>
+
+    <div class="clearfix"></div>
+    
+    <header>
+    <h1>CAJERO AUTOMATICO</h1>
+    </header>
+
+    <div class="clearfix"></div><!--ERA PARA QUE LOS DEMAS ESPACION(BOTONES, CAJAS FLOTANTES) NO SE AGRUPEN EN UNA SOLA LINEA-->
+
+    <section id="content">
+
+    <br>
+    
+    <div class="images">
+        <img src="imagenes/ATM.jpg" width="200" height="250" />
+    </div>
+
+    <br>
+    <label for="">Saldo: Q</label>
+    <input type="number" class="" name="quetzales" id="CuentaQ" value="10000" disabled><!--LE DOY UN VALOR FIJO DE 10000, QUE SON LOS QUETZALES ESPECIFICADOS PARA EL PROYECTO-->
+    <br><br>
+
+    <div class="clearfix"></div>
+
+    <form action="">
+
+        <h2>Ingrese la Cantidad a Retirar</h2>
+        <input type="text" class="field" name="" id="Cant" placeholder="Cantidad"><!--CREO LA CAJA PARA TOMAR UN DATO PARA REALIZAR LA FORMULA-->
+        
+        <br><br> 
+              
+        <i class="fa-solid fa-hand-holding-dollar"></i> <input type="button" class="btn btn-green" value="Retirar" id="bt4" onclick="formula3()"><!--LLAMO LA FUNCION DE JS, QUE REALIZA EL CAMBIO EN EL SALDO-->
+        <br><br>
+                
+    </form>
+    <!--BOTONES-->
+    <a href="menu.html" class="btn-neon" id="neon1"><i class="fa-solid fa-bars"></i> Regresar al Menú</a>
+    <a href="Final.html" class="btn-neon" id="neon1"><i class="fa-solid fa-circle-xmark"></i> Salir</a>
+    </div>
+
+    <script src="Banco.js"></script><!--LLAMO A JS PARA QUE REALICE LA FORMULA3-->
+    <br><br>
+    </section>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <script src="https://kit.fontawesome.com/0ea474e709.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/Estilos.css" />
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <p>JEFERSON ALEXIS SUCHITE CHÁVEZ 0909-22-12681</p>
+    <P>KIMBERLY CATANIA VILLEDA ROSALES 0909-22-13640</P>
+
+    <div class="clearfix"></div>
+    
+    <header>
+    <h1>CAJERO AUTOMATICO</h1>
+    </header>
+
+    <div class="clearfix"></div>
+
+    <section id="content">
+
+    <br>
+    
+    <div class="images">
+        <img src="imagenes/ATM.jpg" width="200" height="250" />
+    </div>
+
+    <br>
+    
+    <label for="">Saldo: $</label>
+    <input type="number" name="dolares" id="CuentaD" value="1500" disabled>
+
+    <br><br>
+
+    <div class="clearfix"></div>
+
+    <form action="">
+
+        <h2>Ingrese la Cantidad a Retirar en Quetzales</h2>
+        <input type="text" class="field" name="" id="Cant" placeholder="Cantidad">
+        
+        <br><br>
+
+        <i class="fa-solid fa-hand-holding-dollar"></i> <input type="button" class="btn btn-green" value="Retirar" id="bt5" onclick="formula4()">
+
+        <br><br>
+                        
+    </form>
+    <a href="menu.html" class="btn-neon" id="neon1"><i class="fa-solid fa-bars"></i> Regresar al Menú</a>
+    <a href="Final.html" class="btn-neon" id="neon1"><i class="fa-solid fa-circle-xmark"></i> Salir</a>
+    <script src="Banco.js"></script>
+    
+    </section>
+
+  </div>
+</body>
+</html>

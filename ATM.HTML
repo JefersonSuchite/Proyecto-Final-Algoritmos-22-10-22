@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <script src="https://kit.fontawesome.com/0ea474e709.js" crossorigin="anonymous"></script><!--ESTO ME PERMITE USAR ICONOS-->
+    <link rel="stylesheet" href="css/Estilo.css" /><!--LLAMO AL ARCHIVO CSS-->
+
+</head>
+
+<body>
+
+    <!--NOMBRE DE INTEGRANTES-->
+    <div id="container"> <!--EL ESPACIO TOTAL QUE OCUPA EL PROGRAMA-->
+    <p>JEFERSON ALEXIS SUCHITE CHÁVEZ 0909-22-12681</p>
+    <P>KIMBERLY CATANIA VILLEDA ROSALES 0909-22-13640</P>
+    
+<section id="content"> <!--CONTENIDO QUE GUARDA LA INTERFAZ DE USUARIO-->
+
+    <!--ENCABEZADO-->
+    <header>
+    <br><br>
+    <h2>Bienvenido al servicio ATM.</h2>
+    <h3>Por favor, Ingrese su Usuario Y contraseña.</h3> 
+    <br>
+    </header>
+
+    <!--FORMULARIO PARA INGRESAR EL USUARIO Y CONTRASEÑA-->
+    <form action="">        
+        <br><br>
+        
+        <div class="images">
+            <img src="imagenes/Panel.gif" width="200" height="200" /> <!--IMAGEN-->
+        </div>
+
+        <br>
+        
+        <label for=""><i class="fa-solid fa-user"></i> Usuario</label><br>
+        <input type="text" class="field" name="usuario" id="" placeholder="XX-XXXXX"> <br><br>
+
+        <label for=""><i class="fa-solid fa-key"></i> Contraseña</label><br>
+        <input type="password" class="field" name="contraseña" id="" placeholder="XXXX">
+        <br><br>
+        <input type="button" class="btn btn-green"  value="Ingresar" onclick="login(this.form)">
+        <br><br>
+           
+    </form>   
+
+    <!--DETECTA SI EL USUARIO Y CONTRASEÑA ESTAN CORRECTOS-->
+    <script>
+        function login(form){
+            if (form.usuario.value=="22-12681","22-13640"){
+                if (form.contraseña.value=="2022") {
+                    location="menu.html";
+                } else {
+                    alert("Error de contraseña");
+                }
+            } else {
+                alert("Error de Usuario");
+            }
+        }
+
+    </script>
+    <!--BOTON PARA SALIR DEL PROGRAMA-->
+<a href="Final.html" class="btn-neon" id="neon1"><i class="fa-solid fa-circle-xmark"></i> Salir</a>
+</section>
+</div>
+</body>
+
+</html>

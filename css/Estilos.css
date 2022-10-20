@@ -1,0 +1,114 @@
+/*LOS ESTILOS PARA PRINCIPAL, QUETZALES, DOLARES Y FINAL*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*IMAGEN DE FONDO DE INTERNET Y SI NO CARGA, HABRA UN COLOR SOLIDO*/
+body{
+    background-image: url(https://eveniments.es/wp-content/uploads/2020/01/fondos-gif-para-paginas-web-con-movimiento-5.gif);
+    background-color: #00281f;
+}
+/*EL TAMAÑO DE LA INTERFAZ DE USUARIO, USE PORSENTAJES PARA QUE SE AJUSTE A LAS PANTALLAS*/
+#container {
+    width: 70%;
+    margin: 0px auto;
+    border: 3px solid black;
+    text-align: center;
+}
+/*LA CABECERA PARA INDICAR QUE HARA EN ESTE PUNTO*/
+header{
+    background: #581845;
+    color: rgb(177, 177, 177);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 150px;
+    border-bottom: 5px dashed black;
+}
+/*EL FONDO DEL CONTENIDO*/
+#content{
+    float: left;
+    background: #c70039;
+    width: 100%;
+    text-align: center;
+}
+
+.clearfix{
+    clear: both;
+}
+#imgd{
+    display: none;
+}
+#imgq{
+    display: none;
+}
+/*DISEÑO DEL BOTON*/
+.btn{
+    border-radius: 3px;
+    display: inline;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1PX 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.btn-green{
+    color: rgb(255, 255, 255);
+    background-color: #3cc93f;
+    width: 30%;
+    font-size: 80%;
+}
+.btn-green:hover{
+    background: #37b839;
+}
+.btn-green:active{
+    background-color: #29962a;
+}
+/*DISEÑO DEL FORMULARIO*/
+form{
+    background-color: #ffc30f;
+    border-radius: 3px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    width: 75%;
+}
+/*EL FIELD SON LAS CAJAS*/
+.field{
+    border: solid 1px #999;
+    padding: 10px;
+    width: 30%;
+    background-color: black;
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+}
+/*LLAMO LA CAJA PARA DARLE COLOR Y TAMAÑO*/
+input[type=number]{
+    border: solid black;
+    border-radius: 4px;
+    width: 15%;
+    padding: 8px 8px;
+    text-align: center;
+    font-size: 25px;
+}
+label{
+    font-size: 25px;
+}
+/*DISEÑO DE LOS BOTONES NEON*/
+#neon1{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#neon1:hover{
+    background: #00c70a;
+    box-shadow: 0 0 10px #00c70a, 0 0 40px #00c70a, 0 0 80px #00c70a;
+    transition-delay: 0.1s;
+}
